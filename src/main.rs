@@ -3,6 +3,7 @@ use std::net::{Ipv4Addr, SocketAddr, TcpStream};
 use std::process::ExitCode;
 use std::time::Duration;
 
+use axum::serve::ListenerExt;
 use subtitle_dashboard::api::ApiDoc;
 use subtitle_dashboard::config::Config;
 use subtitle_dashboard::{AppState, app};
@@ -68,7 +69,13 @@ async fn main() -> ExitCode {
     }
     let addr = SocketAddr::from((Ipv4Addr::UNSPECIFIED, config.port));
     let listener = match tokio::net::TcpListener::bind(addr).await {
-        Ok(listener) => listener,
+        // No Nagle: a file response is written as headers + body, and Nagle with the client's delayed ACK held
+        // the body back ~40 ms per request.
+        Ok(listener) => listener.tap_io(|tcp| {
+            if let Err(e) = tcp.set_nodelay(true) {
+                tracing::warn!("TCP_NODELAY: {e}");
+            }
+        }),
         Err(e) => {
             tracing::error!("can't listen on {addr}: {e}");
             return ExitCode::FAILURE;

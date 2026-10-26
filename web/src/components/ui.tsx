@@ -43,7 +43,7 @@ export function RepairBadge({ value }: { value: Repair | null | undefined }) {
   return <Badge tone={value === "unfixed" ? "bad" : value === "step1-batches" ? "good" : "warn"}>{repair(value)}</Badge>;
 }
 
-/** 80 on the judge's scale reads as good, below 70 as weak (write-up 48: 72 on this judge ≈ "80"). */
+/** 80 on the judge's scale reads as good, below 70 as weak (the judge scores strictly: 72 is already decent). */
 export function scoreTone(score: number | null | undefined): Tone | undefined {
   if (score == null) return undefined;
   return score >= 80 ? "good" : score >= 70 ? "warn" : "bad";

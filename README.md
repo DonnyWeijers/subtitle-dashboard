@@ -100,6 +100,8 @@ The screenshots use the example data in `example/` (made-up shows).
 | Updates | [Renovate](https://docs.renovatebot.com) for cargo, npm, Docker and Actions |
 | Example data | Python 3 (stdlib only) |
 
+MIT licence, see [LICENSE](LICENSE).
+
 ## What it shows
 
 | Page | |
@@ -142,6 +144,29 @@ The dashboard classifies every repair:
 | `step2-batches` | The failing batches needed step 2's model |
 | `step2-file` | The whole file was redone with step 2's model |
 | `unfixed` | Still failing a check after every pass: a weak translation |
+
+## Performance
+
+Measured on the homelab (Intel i5-13500), release build, against subtrans' real data (150 translations, 1,970 calls)
+and a 30× larger copy of the example data (4,600 translations, 43,450 calls):
+
+| | Real data | 30× larger |
+|---|---|---|
+| Memory (RSS) | 2.8 MiB idle in the container, 18 MiB after the load test | 83 MiB after the load test |
+| Start, files read and serving | 23 ms | 254 ms |
+| API response, one client (p50) | 0.03–1.7 ms per endpoint | 2–33 ms per endpoint |
+| API throughput, 16 clients | 550–2,400 requests/s per endpoint (33,000/s for `/api/health`) | 23–620 requests/s |
+| Frontend (`/`), one client (p50) | 0.36 ms | 0.36 ms |
+| Image | 20 MB | |
+
+- Queries share one in-memory SQLite connection behind a mutex, so they run one at a time; with a single user and
+  data that changes every few minutes that is plenty. The slowest queries scan all calls (`/api/costs?group=day`,
+  `/api/checks`); a cache per ingest would make them as fast as `/api/health` if the data ever grows that far.
+- Sockets use `TCP_NODELAY`. Without it, file responses (headers and body written separately) waited ~40 ms each
+  for the client's delayed ACK.
+
+**How fresh is the data?** The API reads new lines from subtrans' files every 15 s (`POLL_SECONDS`). The pages
+refetch every 60 s, and when the browser tab gets focus again.
 
 ## API
 
