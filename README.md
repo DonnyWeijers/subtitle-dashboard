@@ -9,6 +9,52 @@ A dashboard for the costs and quality of my [subtitle translation service](https
 
 All amounts are in euros.
 
+## Getting started
+
+The repo includes a fake subtrans data folder in `example/` (made-up shows, ~90 translations over 75 days), so you
+can try the dashboard without subtrans. To run it on your own subtrans data, see
+[Run it next to subtrans](#run-it-next-to-subtrans-homelab).
+
+### Option 1: Docker
+
+Needs Docker with Compose. Nothing else.
+
+```sh
+git clone https://github.com/DonnyWeijers/subtitle-dashboard.git
+cd subtitle-dashboard
+python3 scripts/make-example-data.py   # optional: move the example dates up to today
+docker compose up --build
+```
+
+Open <http://localhost:8795>. Stop it with `Ctrl+C`, or `docker compose down` when it runs in the background (`-d`).
+
+### Option 2: locally, without Docker
+
+Needs [Rust](https://rustup.rs) (stable) and [Node.js](https://nodejs.org) 24.
+
+```sh
+git clone https://github.com/DonnyWeijers/subtitle-dashboard.git
+cd subtitle-dashboard
+cd web && npm ci && npm run build && cd ..   # build the frontend into web/dist
+DATA_DIR=example cargo run --release         # API and frontend on http://localhost:8080
+```
+
+### Option 3: development, with hot reload
+
+Two terminals:
+
+```sh
+DATA_DIR=example cargo run           # 1: API on http://localhost:8080
+cd web && npm ci && npm run dev      # 2: frontend on http://localhost:5173, /api proxied to :8080
+```
+
+The frontend reloads on save; restart `cargo run` after an API change.
+
+### About the example data
+
+The summary shows *this* month, so the example data ages. `python3 scripts/make-example-data.py` (Python 3, no
+packages) writes it again with dates up to today; the numbers stay the same (fixed seed).
+
 ## What it shows
 
 | Page | |
@@ -76,33 +122,6 @@ The dashboard classifies every repair:
 | `POLL_SECONDS` | `15` | |
 | `STATIC_DIR` | `web/dist` (`/app/web` in the image) | Not found: the API only |
 | `TZ` | | subtrans writes local time; set the same zone so "this month" matches |
-
-## Run it locally
-
-`example/` holds a fake subtrans data folder (made-up shows, ~90 translations over the last 75 days), so the
-dashboard has something to show without subtrans. Its dates move with `scripts/make-example-data.py`: run it
-again to get data up to today (the summary shows *this* month).
-
-### With Docker (nothing else to install)
-
-```sh
-python3 scripts/make-example-data.py   # optional: example data up to today
-docker compose up --build
-```
-
-Open <http://localhost:8795>. `docker compose down` stops it.
-
-### Without Docker, for development
-
-Needs Rust (stable) and Node 24.
-
-```sh
-DATA_DIR=example cargo run           # API on http://localhost:8080
-cd web && npm ci && npm run dev      # frontend on http://localhost:5173, /api proxied to :8080
-```
-
-The frontend reloads on save; restart `cargo run` after an API change. `npm run build` puts the frontend in
-`web/dist`, which `cargo run` then serves itself on :8080.
 
 ## Run it next to subtrans (homelab)
 
