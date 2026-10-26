@@ -4,7 +4,8 @@
     "title": "subtitle-dashboard",
     "description": "Costs and quality of the subtitle translation service (subtrans). All amounts in euros.",
     "license": {
-      "name": ""
+      "name": "MIT",
+      "identifier": "MIT"
     },
     "version": "0.1.0"
   },
