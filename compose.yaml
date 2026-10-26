@@ -1,0 +1,21 @@
+# Locally:  docker compose up --build  ->  http://localhost:8795 with the example data in ./example
+# Homelab:  put the overrides in a .env next to this file (see the README), then docker compose up -d --build
+services:
+  subtitle-dashboard:
+    build: .
+    image: subtitle-dashboard:${TAG:-dev}
+    container_name: subtitle-dashboard
+    # Any user that can read costs.jsonl and state.json; the image's default is distroless' nonroot (65532).
+    user: ${RUN_AS:-65532:65532}
+    environment:
+      - TZ=${TZ:-Europe/Amsterdam} # subtrans writes local time
+      - EUR_PER_USD=${EUR_PER_USD:-0.86} # same rate as subtrans
+    volumes:
+      # subtrans' data folder, read-only: the dashboard never writes to it
+      - ${SUBTRANS_DATA:-./example}:/data:ro
+    ports:
+      - "${BIND:-127.0.0.1}:${PORT:-8795}:8080"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped

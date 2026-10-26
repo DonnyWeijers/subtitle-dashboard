@@ -1,0 +1,3657 @@
+{
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E03 - Street Food WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E03 - Street Food \u00b7 Kitchen Brigade - S23E03 - Street Food WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1098,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0173,
+   "odd_length": 0.0226,
+   "shifted": 0.0064
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01408,
+  "judge_usd": 0.0,
+  "seconds": 64,
+  "at": "2026-08-15T13:38:08",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-15T13:38:08"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E02 - Night Shift WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E02 - Night Shift \u00b7 Ward 7 - S12E02 - Night Shift WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 478,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0173,
+   "odd_length": 0.011,
+   "shifted": 0.0111
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00652,
+  "judge_usd": 0.0,
+  "seconds": 39,
+  "at": "2026-08-13T02:44:49",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-13T02:44:49"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E03 - Code Blue WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E03 - Code Blue \u00b7 Ward 7 - S12E03 - Code Blue WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "google/gemini-3.7-flash",
+   "openai/gpt-6-luna"
+  ],
+  "lines": 613,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0064,
+   "odd_length": 0.0205,
+   "shifted": 0.0587
+  },
+  "failed_checks": [
+   "shifted"
+  ],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0085,
+    "odd_length": 0.0068,
+    "shifted": 0.0322
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 2,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": "all",
+     "failed": [
+      "shifted"
+     ]
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": true,
+  "usd": 0.15659,
+  "judge_usd": 0.0,
+  "seconds": 135,
+  "at": "2026-08-16T14:14:14",
+  "history": [
+   {
+    "tier": 2,
+    "score": null,
+    "failed": [
+     "shifted"
+    ],
+    "at": "2026-08-16T14:14:14"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E07 - Cold Case WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E07 - Cold Case \u00b7 Precinct 14 - S14E07 - Cold Case WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1054,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0066,
+   "odd_length": 0.01,
+   "shifted": 0.0036
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01337,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-08-16T01:02:37",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T01:02:37"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E05 - Rounds WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E05 - Rounds \u00b7 Ward 7 - S12E05 - Rounds WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 580,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0183,
+   "odd_length": 0.0009,
+   "shifted": 0.0064
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00616,
+  "judge_usd": 0.0,
+  "seconds": 43,
+  "at": "2026-08-14T15:06:40",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T15:06:40"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E03 - Pilot WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E03 - Pilot \u00b7 Harbour Watch - S03E03 - Pilot WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 670,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0155,
+   "odd_length": 0.0055,
+   "shifted": 0.0012
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 67,
+  "accuracy": 63,
+  "fluency": 65,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0083,
+  "judge_usd": 0.00852,
+  "seconds": 47,
+  "at": "2026-08-16T19:26:15",
+  "history": [
+   {
+    "tier": 1,
+    "score": 67,
+    "failed": [],
+    "at": "2026-08-16T19:26:15"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E10 - Family Meal WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E10 - Family Meal \u00b7 Kitchen Brigade - S23E10 - Family Meal WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 621,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0136,
+   "odd_length": 0.0144,
+   "shifted": 0.0067
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00746,
+  "judge_usd": 0.0,
+  "seconds": 45,
+  "at": "2026-08-15T02:30:59",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-15T02:30:59"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E08 - Code Blue WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E08 - Code Blue \u00b7 Ward 7 - S12E08 - Code Blue WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 786,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.016,
+   "odd_length": 0.0236,
+   "shifted": 0.009
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01005,
+  "judge_usd": 0.0,
+  "seconds": 51,
+  "at": "2026-08-13T17:48:47",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-13T17:48:47"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E05 - Dead Air WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E05 - Dead Air \u00b7 Northern Signal - S02E05 - Dead Air WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 766,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0092,
+   "odd_length": 0.0223,
+   "shifted": 0.0013
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01004,
+  "judge_usd": 0.0,
+  "seconds": 51,
+  "at": "2026-08-14T03:40:43",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T03:40:43"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E03 - Semi Final WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E03 - Semi Final \u00b7 The Night Bakery - S09E03 - Semi Final WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 839,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0169,
+   "odd_length": 0.0018,
+   "shifted": 0.0007
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0118,
+  "judge_usd": 0.0,
+  "seconds": 54,
+  "at": "2026-08-15T10:39:56",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-15T10:39:56"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E20 - Wiretap WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E20 - Wiretap \u00b7 Precinct 14 - S14E20 - Wiretap WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 791,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.012,
+   "odd_length": 0.0135,
+   "shifted": 0.0001
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00937,
+  "judge_usd": 0.0,
+  "seconds": 52,
+  "at": "2026-08-15T01:58:45",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-15T01:58:45"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E04 - Lineup WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E04 - Lineup \u00b7 Precinct 14 - S14E04 - Lineup WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "google/gemini-3.7-flash",
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1065,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0152,
+   "odd_length": 0.0118,
+   "shifted": 0.0008
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0193,
+    "odd_length": 0.0075,
+    "shifted": 0.035
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 1,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": "all",
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.19615,
+  "judge_usd": 0.0,
+  "seconds": 153,
+  "at": "2026-08-16T20:45:17",
+  "history": [
+   {
+    "tier": 2,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T20:45:17"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E01 - Restaurant Wars WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E01 - Restaurant Wars \u00b7 Kitchen Brigade - S23E01 - Restaurant Wars WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 920,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0001,
+   "odd_length": 0.0111,
+   "shifted": 0.009
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.012,
+  "judge_usd": 0.0,
+  "seconds": 57,
+  "at": "2026-08-16T08:36:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T08:36:00"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E06 - Night Ferry WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E06 - Night Ferry \u00b7 Harbour Watch - S03E06 - Night Ferry WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 573,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0055,
+   "odd_length": 0.006,
+   "shifted": 0.0064
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00761,
+  "judge_usd": 0.0,
+  "seconds": 43,
+  "at": "2026-08-16T01:39:21",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T01:39:21"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E05 - Family Meal WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E05 - Family Meal \u00b7 Kitchen Brigade - S23E05 - Family Meal WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 900,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.001,
+   "odd_length": 0.0017,
+   "shifted": 0.0034
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01067,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-08-14T20:03:25",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T20:03:25"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E08 - Badge WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E08 - Badge \u00b7 Precinct 14 - S14E08 - Badge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 890,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0073,
+   "odd_length": 0.0176,
+   "shifted": 0.0088
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 82,
+  "accuracy": 84,
+  "fluency": 79,
+  "problems": [
+   {
+    "line": 564,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   }
+  ],
+  "weak": false,
+  "usd": 0.0091,
+  "judge_usd": 0.01405,
+  "seconds": 56,
+  "at": "2026-08-14T14:16:13",
+  "history": [
+   {
+    "tier": 1,
+    "score": 82,
+    "failed": [],
+    "at": "2026-08-14T14:16:13"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E14 - Quickfire WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E14 - Quickfire \u00b7 Kitchen Brigade - S23E14 - Quickfire WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 819,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0135,
+   "odd_length": 0.0031,
+   "shifted": 0.0037
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01086,
+  "judge_usd": 0.0,
+  "seconds": 53,
+  "at": "2026-08-16T03:35:32",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T03:35:32"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E06 - Triage WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E06 - Triage \u00b7 Ward 7 - S12E06 - Triage WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 702,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0046,
+   "odd_length": 0.0225,
+   "shifted": 0.0025
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00892,
+  "judge_usd": 0.0,
+  "seconds": 48,
+  "at": "2026-08-16T02:05:17",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T02:05:17"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E13 - Street Food WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E13 - Street Food \u00b7 Kitchen Brigade - S23E13 - Street Food WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 742,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0074,
+   "odd_length": 0.0215,
+   "shifted": 0.0113
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00991,
+  "judge_usd": 0.0,
+  "seconds": 50,
+  "at": "2026-08-14T09:52:23",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T09:52:23"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E15 - Wiretap WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E15 - Wiretap \u00b7 Precinct 14 - S14E15 - Wiretap WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 684,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.016,
+   "odd_length": 0.0182,
+   "shifted": 0.001
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 70,
+  "accuracy": 66,
+  "fluency": 69,
+  "problems": [
+   {
+    "line": 180,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00917,
+  "judge_usd": 0.00921,
+  "seconds": 47,
+  "at": "2026-08-17T02:41:04",
+  "history": [
+   {
+    "tier": 1,
+    "score": 70,
+    "failed": [],
+    "at": "2026-08-17T02:41:04"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E13 - Badge WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E13 - Badge \u00b7 Precinct 14 - S14E13 - Badge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 705,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0147,
+   "odd_length": 0.0186,
+   "shifted": 0.01
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00895,
+  "judge_usd": 0.0,
+  "seconds": 48,
+  "at": "2026-08-13T11:47:13",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-13T11:47:13"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E13 - Code Blue WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E13 - Code Blue \u00b7 Ward 7 - S12E13 - Code Blue WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 906,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.001,
+   "odd_length": 0.012,
+   "shifted": 0.0093
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01306,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-08-14T13:08:26",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T13:08:26"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E08 - Street Food WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E08 - Street Food \u00b7 Kitchen Brigade - S23E08 - Street Food WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 947,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0108,
+   "odd_length": 0.0193,
+   "shifted": 0.0025
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01101,
+  "judge_usd": 0.0,
+  "seconds": 58,
+  "at": "2026-08-14T19:43:39",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T19:43:39"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E22 - Cold Case WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E22 - Cold Case \u00b7 Precinct 14 - S14E22 - Cold Case WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 998,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0013,
+   "odd_length": 0.0017,
+   "shifted": 0.0081
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01305,
+  "judge_usd": 0.0,
+  "seconds": 60,
+  "at": "2026-08-13T20:36:47",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-13T20:36:47"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E11 - Pilot WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E11 - Pilot \u00b7 Harbour Watch - S03E11 - Pilot WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 895,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0116,
+   "odd_length": 0.001,
+   "shifted": 0.0103
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01155,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-08-15T20:06:12",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-15T20:06:12"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E05 - The Lock WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E05 - The Lock \u00b7 Harbour Watch - S03E05 - The Lock WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 746,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0049,
+   "odd_length": 0.0022,
+   "shifted": 0.0085
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00942,
+  "judge_usd": 0.0,
+  "seconds": 50,
+  "at": "2026-08-16T05:34:05",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T05:34:05"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E08 - Mooring WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E08 - Mooring \u00b7 Harbour Watch - S03E08 - Mooring WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 559,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0093,
+   "odd_length": 0.0098,
+   "shifted": 0.0112
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00699,
+  "judge_usd": 0.0,
+  "seconds": 42,
+  "at": "2026-08-14T16:03:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T16:03:00"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E08 - Blackout WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E08 - Blackout \u00b7 Northern Signal - S02E08 - Blackout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 754,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0085,
+   "odd_length": 0.0038,
+   "shifted": 0.0014
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.1178,
+    "odd_length": 0.0146,
+    "shifted": 0.0084
+   },
+   "failed": [
+    "untranslated"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01144,
+  "judge_usd": 0.0,
+  "seconds": 140,
+  "at": "2026-08-13T13:49:46",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-13T13:49:46"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E19 - Lineup WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E19 - Lineup \u00b7 Precinct 14 - S14E19 - Lineup WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 664,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0184,
+   "odd_length": 0.0159,
+   "shifted": 0.0006
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0122,
+    "odd_length": 0.0216,
+    "shifted": 0.0273
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00951,
+  "judge_usd": 0.0,
+  "seconds": 137,
+  "at": "2026-08-14T07:19:57",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-14T07:19:57"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E19 - Discharge WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E19 - Discharge \u00b7 Ward 7 - S12E19 - Discharge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 968,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0165,
+   "odd_length": 0.0013,
+   "shifted": 0.0011
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0109,
+    "odd_length": 0.0197,
+    "shifted": 0.0486
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01402,
+  "judge_usd": 0.0,
+  "seconds": 149,
+  "at": "2026-08-16T04:26:24",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-16T04:26:24"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E14 - Discharge WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E14 - Discharge \u00b7 Ward 7 - S12E14 - Discharge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 752,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0035,
+   "odd_length": 0.0025,
+   "shifted": 0.0015
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00905,
+  "judge_usd": 0.0,
+  "seconds": 50,
+  "at": "2026-09-08T04:18:34",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-08T04:18:34"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E02 - Finale WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E02 - Finale \u00b7 Kitchen Brigade - S23E02 - Finale WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 583,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0071,
+   "odd_length": 0.005,
+   "shifted": 0.0072
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00768,
+  "judge_usd": 0.0,
+  "seconds": 43,
+  "at": "2026-08-24T02:36:59",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-24T02:36:59"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E04 - Quickfire WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E04 - Quickfire \u00b7 Kitchen Brigade - S23E04 - Quickfire WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 518,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0127,
+   "odd_length": 0.0008,
+   "shifted": 0.0112
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00631,
+  "judge_usd": 0.0,
+  "seconds": 41,
+  "at": "2026-08-26T13:43:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-26T13:43:00"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E04 - Discharge WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E04 - Discharge \u00b7 Ward 7 - S12E04 - Discharge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 827,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0149,
+   "odd_length": 0.0195,
+   "shifted": 0.0109
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00992,
+  "judge_usd": 0.0,
+  "seconds": 53,
+  "at": "2026-08-23T00:01:41",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-23T00:01:41"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E18 - Badge WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E18 - Badge \u00b7 Precinct 14 - S14E18 - Badge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 776,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0109,
+   "odd_length": 0.0096,
+   "shifted": 0.0067
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00905,
+  "judge_usd": 0.0,
+  "seconds": 51,
+  "at": "2026-09-19T22:08:43",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-19T22:08:43"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E02 - Relay WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E02 - Relay \u00b7 Northern Signal - S02E02 - Relay WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1057,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0039,
+   "odd_length": 0.0016,
+   "shifted": 0.0018
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01375,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-10-01T23:46:18",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-01T23:46:18"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E02 - Fog WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E02 - Fog \u00b7 Harbour Watch - S03E02 - Fog WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 862,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.011,
+   "odd_length": 0.0129,
+   "shifted": 0.0041
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0088,
+    "odd_length": 0.0037,
+    "shifted": 0.0492
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": []
+    }
+   ]
+  },
+  "score": 80,
+  "accuracy": 76,
+  "fluency": 80,
+  "problems": [
+   {
+    "line": 788,
+    "type": "untranslated",
+    "note": "A short English line was left as is."
+   }
+  ],
+  "weak": false,
+  "usd": 0.01228,
+  "judge_usd": 0.01418,
+  "seconds": 144,
+  "at": "2026-09-10T17:47:48",
+  "history": [
+   {
+    "tier": 1,
+    "score": 80,
+    "failed": [],
+    "at": "2026-09-10T17:47:48"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E09 - Discharge WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E09 - Discharge \u00b7 Ward 7 - S12E09 - Discharge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 599,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0071,
+   "odd_length": 0.0011,
+   "shifted": 0.0119
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00686,
+  "judge_usd": 0.0,
+  "seconds": 44,
+  "at": "2026-09-19T05:14:27",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-19T05:14:27"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E21 - Stakeout WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E21 - Stakeout \u00b7 Precinct 14 - S14E21 - Stakeout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1067,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0196,
+   "odd_length": 0.0107,
+   "shifted": 0.0091
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01301,
+  "judge_usd": 0.0,
+  "seconds": 63,
+  "at": "2026-08-23T10:20:19",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-23T10:20:19"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E04 - Frequency WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E04 - Frequency \u00b7 Northern Signal - S02E04 - Frequency WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 902,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0146,
+   "odd_length": 0.0233,
+   "shifted": 0.009
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01144,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-08-19T03:31:22",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-19T03:31:22"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E01 - Bread Week WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E01 - Bread Week \u00b7 The Night Bakery - S09E01 - Bread Week WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 615,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0087,
+   "odd_length": 0.022,
+   "shifted": 0.0046
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 84,
+  "accuracy": 80,
+  "fluency": 86,
+  "problems": [
+   {
+    "line": 294,
+    "type": "meaning",
+    "note": "A joke depends on English wordplay and is lost."
+   },
+   {
+    "line": 306,
+    "type": "meaning",
+    "note": "An idiom is translated word for word; the Dutch reads oddly."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00751,
+  "judge_usd": 0.00939,
+  "seconds": 45,
+  "at": "2026-09-06T03:04:12",
+  "history": [
+   {
+    "tier": 1,
+    "score": 84,
+    "failed": [],
+    "at": "2026-09-06T03:04:12"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E12 - Ballast WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E12 - Ballast \u00b7 Harbour Watch - S03E12 - Ballast WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 941,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0025,
+   "odd_length": 0.022,
+   "shifted": 0.0037
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0119,
+  "judge_usd": 0.0,
+  "seconds": 58,
+  "at": "2026-09-26T00:27:40",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-26T00:27:40"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E10 - Wiretap WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E10 - Wiretap \u00b7 Precinct 14 - S14E10 - Wiretap WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 808,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0111,
+   "odd_length": 0.0187,
+   "shifted": 0.0115
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 80,
+  "accuracy": 78,
+  "fluency": 79,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00981,
+  "judge_usd": 0.01154,
+  "seconds": 52,
+  "at": "2026-09-16T19:12:59",
+  "history": [
+   {
+    "tier": 1,
+    "score": 80,
+    "failed": [],
+    "at": "2026-09-16T19:12:59"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E07 - Night Shift WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E07 - Night Shift \u00b7 Ward 7 - S12E07 - Night Shift WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1055,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0067,
+   "odd_length": 0.0179,
+   "shifted": 0.0079
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 76,
+  "accuracy": 74,
+  "fluency": 79,
+  "problems": [
+   {
+    "line": 885,
+    "type": "meaning",
+    "note": "An idiom is translated word for word; the Dutch reads oddly."
+   },
+   {
+    "line": 982,
+    "type": "meaning",
+    "note": "A joke depends on English wordplay and is lost."
+   },
+   {
+    "line": 474,
+    "type": "register",
+    "note": "Too formal ('u') for friends talking."
+   },
+   {
+    "line": 562,
+    "type": "fluency",
+    "note": "Stiff sentence; a native speaker would say it shorter."
+   },
+   {
+    "line": 355,
+    "type": "untranslated",
+    "note": "A short English line was left as is."
+   }
+  ],
+  "weak": false,
+  "usd": 0.01219,
+  "judge_usd": 0.01556,
+  "seconds": 62,
+  "at": "2026-10-14T14:30:30",
+  "history": [
+   {
+    "tier": 1,
+    "score": 76,
+    "failed": [],
+    "at": "2026-10-14T14:30:30"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E01 - Static WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E01 - Static \u00b7 Northern Signal - S02E01 - Static WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 943,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0165,
+   "odd_length": 0.007,
+   "shifted": 0.0118
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01261,
+  "judge_usd": 0.0,
+  "seconds": 58,
+  "at": "2026-08-27T00:38:17",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-27T00:38:17"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E02 - Cold Case WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E02 - Cold Case \u00b7 Precinct 14 - S14E02 - Cold Case WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 909,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0174,
+   "odd_length": 0.0224,
+   "shifted": 0.0022
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01042,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-09-20T22:07:28",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-20T22:07:28"
+   }
+  ]
+ },
+ "/data/movies/Glass Orchard (2019)/Glass Orchard (2019) WEBDL-1080p.nl.srt": {
+  "title": "Glass Orchard \u00b7 Glass Orchard (2019) WEBDL-1080p.en.hi.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1676,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0016,
+   "odd_length": 0.0008,
+   "shifted": 0.0085
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.02043,
+  "judge_usd": 0.0,
+  "seconds": 87,
+  "at": "2026-10-23T04:14:18",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-23T04:14:18"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E16 - Triage WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E16 - Triage \u00b7 Ward 7 - S12E16 - Triage WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 556,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0061,
+   "odd_length": 0.0119,
+   "shifted": 0.0056
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00714,
+  "judge_usd": 0.0,
+  "seconds": 42,
+  "at": "2026-10-13T03:12:20",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-13T03:12:20"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E07 - Finale WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E07 - Finale \u00b7 Kitchen Brigade - S23E07 - Finale WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 975,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0183,
+   "odd_length": 0.0166,
+   "shifted": 0.007
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01187,
+  "judge_usd": 0.0,
+  "seconds": 59,
+  "at": "2026-10-02T15:46:12",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-02T15:46:12"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E01 - Low Tide WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E01 - Low Tide \u00b7 Harbour Watch - S03E01 - Low Tide WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 890,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0099,
+   "odd_length": 0.0029,
+   "shifted": 0.005
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01089,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-08-24T13:16:34",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-24T13:16:34"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E12 - Finale WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E12 - Finale \u00b7 Kitchen Brigade - S23E12 - Finale WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "google/gemini-3.7-flash",
+   "openai/gpt-6-luna"
+  ],
+  "lines": 485,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0065,
+   "odd_length": 0.0009,
+   "shifted": 0.0104
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0128,
+    "odd_length": 0.0225,
+    "shifted": 0.0433
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 2,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": "all",
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.12573,
+  "judge_usd": 0.0,
+  "seconds": 129,
+  "at": "2026-10-26T19:07:59",
+  "history": [
+   {
+    "tier": 2,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-26T19:07:59"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E09 - Lineup WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E09 - Lineup \u00b7 Precinct 14 - S14E09 - Lineup WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1049,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0157,
+   "odd_length": 0.018,
+   "shifted": 0.0059
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01338,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-10-18T03:46:34",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-18T03:46:34"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E06 - Cake Week WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E06 - Cake Week \u00b7 The Night Bakery - S09E06 - Cake Week WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 630,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0084,
+   "odd_length": 0.0175,
+   "shifted": 0.0041
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 85,
+  "accuracy": 83,
+  "fluency": 85,
+  "problems": [
+   {
+    "line": 23,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   },
+   {
+    "line": 462,
+    "type": "fluency",
+    "note": "Stiff sentence; a native speaker would say it shorter."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00776,
+  "judge_usd": 0.01058,
+  "seconds": 45,
+  "at": "2026-08-30T11:01:42",
+  "history": [
+   {
+    "tier": 1,
+    "score": 85,
+    "failed": [],
+    "at": "2026-08-30T11:01:42"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E04 - The Final WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E04 - The Final \u00b7 The Night Bakery - S09E04 - The Final WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 520,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0092,
+   "odd_length": 0.0077,
+   "shifted": 0.0093
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00661,
+  "judge_usd": 0.0,
+  "seconds": 41,
+  "at": "2026-09-28T04:16:23",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-28T04:16:23"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E10 - Rounds WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E10 - Rounds \u00b7 Ward 7 - S12E10 - Rounds WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 607,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0172,
+   "odd_length": 0.0165,
+   "shifted": 0.0047
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00778,
+  "judge_usd": 0.0,
+  "seconds": 44,
+  "at": "2026-10-17T14:34:07",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-17T14:34:07"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E07 - Dry Dock WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E07 - Dry Dock \u00b7 Harbour Watch - S03E07 - Dry Dock WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 681,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0189,
+   "odd_length": 0.0164,
+   "shifted": 0.0022
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00924,
+  "judge_usd": 0.0,
+  "seconds": 47,
+  "at": "2026-08-20T05:30:46",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-20T05:30:46"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E15 - Rounds WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E15 - Rounds \u00b7 Ward 7 - S12E15 - Rounds WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 645,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.014,
+   "odd_length": 0.0093,
+   "shifted": 0.012
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00841,
+  "judge_usd": 0.0,
+  "seconds": 46,
+  "at": "2026-09-07T11:30:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-07T11:30:00"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E18 - Code Blue WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E18 - Code Blue \u00b7 Ward 7 - S12E18 - Code Blue WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 784,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0138,
+   "odd_length": 0.0246,
+   "shifted": 0.002
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 80,
+  "accuracy": 76,
+  "fluency": 82,
+  "problems": [
+   {
+    "line": 673,
+    "type": "meaning",
+    "note": "A joke depends on English wordplay and is lost."
+   },
+   {
+    "line": 190,
+    "type": "untranslated",
+    "note": "A short English line was left as is."
+   },
+   {
+    "line": 408,
+    "type": "fluency",
+    "note": "Stiff sentence; a native speaker would say it shorter."
+   },
+   {
+    "line": 712,
+    "type": "meaning",
+    "note": "An idiom is translated word for word; the Dutch reads oddly."
+   },
+   {
+    "line": 576,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00987,
+  "judge_usd": 0.00839,
+  "seconds": 51,
+  "at": "2026-09-17T05:58:23",
+  "history": [
+   {
+    "tier": 1,
+    "score": 80,
+    "failed": [],
+    "at": "2026-09-17T05:58:23"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E17 - Cold Case WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E17 - Cold Case \u00b7 Precinct 14 - S14E17 - Cold Case WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 866,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0063,
+   "odd_length": 0.0209,
+   "shifted": 0.0036
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0112,
+  "judge_usd": 0.0,
+  "seconds": 55,
+  "at": "2026-10-06T10:06:05",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-06T10:06:05"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E07 - Bread Week WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E07 - Bread Week \u00b7 The Night Bakery - S09E07 - Bread Week WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 845,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0198,
+   "odd_length": 0.0195,
+   "shifted": 0.0103
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01131,
+  "judge_usd": 0.0,
+  "seconds": 54,
+  "at": "2026-09-11T21:08:32",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-11T21:08:32"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E06 - Restaurant Wars WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E06 - Restaurant Wars \u00b7 Kitchen Brigade - S23E06 - Restaurant Wars WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 692,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0041,
+   "odd_length": 0.0003,
+   "shifted": 0.0047
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00919,
+  "judge_usd": 0.0,
+  "seconds": 48,
+  "at": "2026-10-05T06:55:12",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-05T06:55:12"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E01 - Triage WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E01 - Triage \u00b7 Ward 7 - S12E01 - Triage WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 702,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0164,
+   "odd_length": 0.0062,
+   "shifted": 0.0106
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 73,
+  "accuracy": 73,
+  "fluency": 68,
+  "problems": [
+   {
+    "line": 539,
+    "type": "fluency",
+    "note": "Stiff sentence; a native speaker would say it shorter."
+   },
+   {
+    "line": 606,
+    "type": "untranslated",
+    "note": "A short English line was left as is."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00788,
+  "judge_usd": 0.01274,
+  "seconds": 48,
+  "at": "2026-10-17T14:59:36",
+  "history": [
+   {
+    "tier": 1,
+    "score": 73,
+    "failed": [],
+    "at": "2026-10-17T14:59:36"
+   }
+  ]
+ },
+ "/data/movies/Iron Meadow (2023)/Iron Meadow (2023) WEBDL-1080p.nl.srt": {
+  "title": "Iron Meadow \u00b7 Iron Meadow (2023) WEBDL-1080p.en.hi.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1189,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0068,
+   "odd_length": 0.0093,
+   "shifted": 0.0037
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0145,
+  "judge_usd": 0.0,
+  "seconds": 68,
+  "at": "2026-09-09T18:43:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-09T18:43:00"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E01 - Stakeout WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E01 - Stakeout \u00b7 Precinct 14 - S14E01 - Stakeout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 613,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0104,
+   "odd_length": 0.0228,
+   "shifted": 0.0021
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00705,
+  "judge_usd": 0.0,
+  "seconds": 45,
+  "at": "2026-09-10T06:52:55",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-10T06:52:55"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E09 - Semi Final WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E09 - Semi Final \u00b7 The Night Bakery - S09E09 - Semi Final WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 664,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.007,
+   "odd_length": 0.02,
+   "shifted": 0.0074
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00904,
+  "judge_usd": 0.0,
+  "seconds": 47,
+  "at": "2026-08-23T06:44:21",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-23T06:44:21"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E14 - Lineup WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E14 - Lineup \u00b7 Precinct 14 - S14E14 - Lineup WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 465,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0192,
+   "odd_length": 0.0173,
+   "shifted": 0.0082
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00569,
+  "judge_usd": 0.0,
+  "seconds": 39,
+  "at": "2026-10-09T13:58:02",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-09T13:58:02"
+   }
+  ]
+ },
+ "/data/movies/The Long Crossing (2021)/The Long Crossing (2021) WEBDL-1080p.nl.srt": {
+  "title": "The Long Crossing \u00b7 The Long Crossing (2021) WEBDL-1080p.en.hi.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1402,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0045,
+   "odd_length": 0.0104,
+   "shifted": 0.0019
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0163,
+    "odd_length": 0.0217,
+    "shifted": 0.0479
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01938,
+  "judge_usd": 0.0,
+  "seconds": 166,
+  "at": "2026-09-28T23:03:14",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-28T23:03:14"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E09 - Low Tide WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E09 - Low Tide \u00b7 Harbour Watch - S03E09 - Low Tide WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 739,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0108,
+   "odd_length": 0.0202,
+   "shifted": 0.0093
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 83,
+  "accuracy": 83,
+  "fluency": 80,
+  "problems": [
+   {
+    "line": 16,
+    "type": "meaning",
+    "note": "A joke depends on English wordplay and is lost."
+   },
+   {
+    "line": 368,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00927,
+  "judge_usd": 0.01157,
+  "seconds": 50,
+  "at": "2026-08-19T11:53:20",
+  "history": [
+   {
+    "tier": 1,
+    "score": 83,
+    "failed": [],
+    "at": "2026-08-19T11:53:20"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E11 - Triage WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E11 - Triage \u00b7 Ward 7 - S12E11 - Triage WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 511,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0157,
+   "odd_length": 0.0138,
+   "shifted": 0.0103
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00622,
+  "judge_usd": 0.0,
+  "seconds": 40,
+  "at": "2026-10-09T23:42:59",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-09T23:42:59"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E10 - Fog WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E10 - Fog \u00b7 Harbour Watch - S03E10 - Fog WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 877,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0042,
+   "odd_length": 0.011,
+   "shifted": 0.0071
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01153,
+  "judge_usd": 0.0,
+  "seconds": 55,
+  "at": "2026-10-26T05:14:48",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-26T05:14:48"
+   }
+  ]
+ },
+ "/data/series/Harbour Watch/Season 3/Harbour Watch - S03E04 - Ballast WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S03E04 - Ballast \u00b7 Harbour Watch - S03E04 - Ballast WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 736,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0059,
+   "odd_length": 0.0162,
+   "shifted": 0.0021
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00798,
+  "judge_usd": 0.0,
+  "seconds": 49,
+  "at": "2026-09-27T02:43:57",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-27T02:43:57"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E12 - Cold Case WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E12 - Cold Case \u00b7 Precinct 14 - S14E12 - Cold Case WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1061,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0143,
+   "odd_length": 0.0171,
+   "shifted": 0.0019
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01458,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-10-25T04:22:10",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-25T04:22:10"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E17 - Night Shift WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E17 - Night Shift \u00b7 Ward 7 - S12E17 - Night Shift WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 879,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0099,
+   "odd_length": 0.0195,
+   "shifted": 0.003
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01028,
+  "judge_usd": 0.0,
+  "seconds": 55,
+  "at": "2026-09-01T06:49:08",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-01T06:49:08"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E16 - Stakeout WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E16 - Stakeout \u00b7 Precinct 14 - S14E16 - Stakeout WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "google/gemini-3.7-flash",
+   "openai/gpt-6-luna"
+  ],
+  "lines": 981,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0147,
+   "odd_length": 0.0058,
+   "shifted": 0.0223
+  },
+  "failed_checks": [
+   "shifted"
+  ],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0125,
+    "odd_length": 0.0158,
+    "shifted": 0.0386
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 1,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": "all",
+     "failed": [
+      "shifted"
+     ]
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": true,
+  "usd": 0.16834,
+  "judge_usd": 0.0,
+  "seconds": 149,
+  "at": "2026-09-05T21:36:08",
+  "history": [
+   {
+    "tier": 2,
+    "score": null,
+    "failed": [
+     "shifted"
+    ],
+    "at": "2026-09-05T21:36:08"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E11 - Stakeout WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E11 - Stakeout \u00b7 Precinct 14 - S14E11 - Stakeout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1059,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.004,
+   "odd_length": 0.0084,
+   "shifted": 0.0063
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01293,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-09-08T15:59:16",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-08T15:59:16"
+   }
+  ]
+ },
+ "/data/movies/Paper Lanterns (2016)/Paper Lanterns (2016) WEBDL-1080p.nl.srt": {
+  "title": "Paper Lanterns \u00b7 Paper Lanterns (2016) WEBDL-1080p.en.hi.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1681,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0006,
+   "odd_length": 0.0144,
+   "shifted": 0.0069
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.02158,
+  "judge_usd": 0.0,
+  "seconds": 87,
+  "at": "2026-10-15T10:22:10",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-15T10:22:10"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E22 - Night Shift WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E22 - Night Shift \u00b7 Ward 7 - S12E22 - Night Shift WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 759,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0048,
+   "odd_length": 0.0113,
+   "shifted": 0.0072
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01038,
+  "judge_usd": 0.0,
+  "seconds": 50,
+  "at": "2026-10-20T05:16:01",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-20T05:16:01"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E06 - Static WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E06 - Static \u00b7 Northern Signal - S02E06 - Static WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 931,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0028,
+   "odd_length": 0.0011,
+   "shifted": 0.0061
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0107,
+    "odd_length": 0.0001,
+    "shifted": 0.0337
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01359,
+  "judge_usd": 0.0,
+  "seconds": 147,
+  "at": "2026-10-20T03:41:23",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-20T03:41:23"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E07 - Relay WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E07 - Relay \u00b7 Northern Signal - S02E07 - Relay WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 621,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0077,
+   "odd_length": 0.0103,
+   "shifted": 0.0082
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00891,
+  "judge_usd": 0.0,
+  "seconds": 45,
+  "at": "2026-10-19T05:35:22",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-19T05:35:22"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E20 - Rounds WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E20 - Rounds \u00b7 Ward 7 - S12E20 - Rounds WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 762,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0019,
+   "odd_length": 0.0238,
+   "shifted": 0.0099
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00991,
+  "judge_usd": 0.0,
+  "seconds": 50,
+  "at": "2026-10-20T02:55:47",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-20T02:55:47"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E02 - Pastry WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E02 - Pastry \u00b7 The Night Bakery - S09E02 - Pastry WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 601,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0034,
+   "odd_length": 0.0117,
+   "shifted": 0.011
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00815,
+  "judge_usd": 0.0,
+  "seconds": 44,
+  "at": "2026-10-03T18:31:24",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-03T18:31:24"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E08 - Pastry WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E08 - Pastry \u00b7 The Night Bakery - S09E08 - Pastry WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 805,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0021,
+   "odd_length": 0.0005,
+   "shifted": 0.0068
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00927,
+  "judge_usd": 0.0,
+  "seconds": 52,
+  "at": "2026-09-23T10:34:43",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-23T10:34:43"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E10 - The Final WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E10 - The Final \u00b7 The Night Bakery - S09E10 - The Final WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1099,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0024,
+   "odd_length": 0.0237,
+   "shifted": 0.0022
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.0695,
+    "odd_length": 0.0179,
+    "shifted": 0.0004
+   },
+   "failed": [
+    "untranslated"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  },
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01546,
+  "judge_usd": 0.0,
+  "seconds": 154,
+  "at": "2026-09-27T13:03:06",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-27T13:03:06"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E12 - Night Shift WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E12 - Night Shift \u00b7 Ward 7 - S12E12 - Night Shift WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1060,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0004,
+   "odd_length": 0.0055,
+   "shifted": 0.0094
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0143,
+  "judge_usd": 0.0,
+  "seconds": 62,
+  "at": "2026-09-22T09:35:25",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-22T09:35:25"
+   }
+  ]
+ },
+ "/data/series/Northern Signal/Season 2/Northern Signal - S02E03 - Blackout WEBDL-1080p.nl.srt": {
+  "title": "Northern Signal - S02E03 - Blackout \u00b7 Northern Signal - S02E03 - Blackout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 632,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0181,
+   "odd_length": 0.0119,
+   "shifted": 0.0103
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00786,
+  "judge_usd": 0.0,
+  "seconds": 45,
+  "at": "2026-09-22T19:22:58",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-22T19:22:58"
+   }
+  ]
+ },
+ "/data/series/Ward 7/Season 12/Ward 7 - S12E21 - Triage WEBDL-1080p.nl.srt": {
+  "title": "Ward 7 - S12E21 - Triage \u00b7 Ward 7 - S12E21 - Triage WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 958,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0128,
+   "odd_length": 0.019,
+   "shifted": 0.006
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 78,
+  "accuracy": 76,
+  "fluency": 74,
+  "problems": [
+   {
+    "line": 424,
+    "type": "fluency",
+    "note": "Stiff sentence; a native speaker would say it shorter."
+   },
+   {
+    "line": 784,
+    "type": "untranslated",
+    "note": "A short English line was left as is."
+   },
+   {
+    "line": 713,
+    "type": "register",
+    "note": "Too formal ('u') for friends talking."
+   },
+   {
+    "line": 66,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   },
+   {
+    "line": 54,
+    "type": "meaning",
+    "note": "An idiom is translated word for word; the Dutch reads oddly."
+   }
+  ],
+  "weak": false,
+  "usd": 0.01192,
+  "judge_usd": 0.01041,
+  "seconds": 58,
+  "at": "2026-09-20T16:26:34",
+  "history": [
+   {
+    "tier": 1,
+    "score": 78,
+    "failed": [],
+    "at": "2026-09-20T16:26:34"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E09 - Quickfire WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E09 - Quickfire \u00b7 Kitchen Brigade - S23E09 - Quickfire WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 947,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0118,
+   "odd_length": 0.0096,
+   "shifted": 0.0082
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01192,
+  "judge_usd": 0.0,
+  "seconds": 58,
+  "at": "2026-10-26T19:01:59",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-26T19:01:59"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E03 - Badge WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E03 - Badge \u00b7 Precinct 14 - S14E03 - Badge WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 700,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.001,
+   "odd_length": 0.0178,
+   "shifted": 0.0119
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.00918,
+  "judge_usd": 0.0,
+  "seconds": 48,
+  "at": "2026-09-25T03:45:41",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-25T03:45:41"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E06 - Stakeout WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E06 - Stakeout \u00b7 Precinct 14 - S14E06 - Stakeout WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 911,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0111,
+   "odd_length": 0.0127,
+   "shifted": 0.0119
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01174,
+  "judge_usd": 0.0,
+  "seconds": 56,
+  "at": "2026-09-25T01:06:03",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-09-25T01:06:03"
+   }
+  ]
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E05 - Biscuits WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E05 - Biscuits \u00b7 The Night Bakery - S09E05 - Biscuits WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 774,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0104,
+   "odd_length": 0.0137,
+   "shifted": 0.0089
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01003,
+  "judge_usd": 0.0,
+  "seconds": 51,
+  "at": "2026-08-20T03:03:13",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-08-20T03:03:13"
+   }
+  ]
+ },
+ "/data/series/Kitchen Brigade/Season 23/Kitchen Brigade - S23E11 - Restaurant Wars WEBDL-1080p.nl.srt": {
+  "title": "Kitchen Brigade - S23E11 - Restaurant Wars \u00b7 Kitchen Brigade - S23E11 - Restaurant Wars WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 714,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.0169,
+   "odd_length": 0.0034,
+   "shifted": 0.0046
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": 90,
+  "accuracy": 92,
+  "fluency": 91,
+  "problems": [
+   {
+    "line": 55,
+    "type": "grammar",
+    "note": "Wrong word order in a subordinate clause."
+   }
+  ],
+  "weak": false,
+  "usd": 0.00921,
+  "judge_usd": 0.01257,
+  "seconds": 49,
+  "at": "2026-09-06T08:45:02",
+  "history": [
+   {
+    "tier": 1,
+    "score": 90,
+    "failed": [],
+    "at": "2026-09-06T08:45:02"
+   }
+  ]
+ },
+ "/data/series/Precinct 14/Season 14/Precinct 14 - S14E05 - Wiretap WEBDL-1080p.nl.srt": {
+  "title": "Precinct 14 - S14E05 - Wiretap \u00b7 Precinct 14 - S14E05 - Wiretap WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 994,
+  "missing": 0,
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.009,
+   "odd_length": 0.0171,
+   "shifted": 0.0003
+  },
+  "failed_checks": [],
+  "step1": null,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.01358,
+  "judge_usd": 0.0,
+  "seconds": 60,
+  "at": "2026-10-06T01:50:13",
+  "history": [
+   {
+    "tier": 1,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-06T01:50:13"
+   }
+  ]
+ }
+}
