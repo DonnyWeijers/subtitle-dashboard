@@ -1,0 +1,13 @@
+{"t": "2026-09-20T09:59:30", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.002, "title": "Harbour Watch - S01E01 - Pilot \u00b7 Harbour Watch - S01E01 - Pilot WEBDL-1080p.en.srt"}
+{"t": "2026-09-20T10:00:00", "kind": "judge", "model": "anthropic/claude-sonnet-5.5", "usd": 0.01, "title": "Harbour Watch - S01E01 - Pilot \u00b7 Harbour Watch - S01E01 - Pilot WEBDL-1080p.en.srt"}
+{"t": "2026-10-02T21:13:00", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.002, "title": "Harbour Watch - S01E02 - Low Tide \u00b7 Harbour Watch - S01E02 - Low Tide WEBDL-1080p.en.srt"}
+{"t": "2026-10-02T21:15:00", "kind": "translate", "model": "google/gemini-3.7-flash", "usd": 0.08, "title": "Harbour Watch - S01E02 - Low Tide \u00b7 Harbour Watch - S01E02 - Low Tide WEBDL-1080p.en.srt"}
+{"t": "2026-10-03T22:31:40", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.0001, "title": "TEST Sample"}
+{this line is broken
+{"t": "2026-10-05T08:28:00", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.002, "title": "Harbour Watch - S01E03 - Fog \u00b7 Harbour Watch - S01E03 - Fog WEBDL-1080p.en.srt"}
+{"t": "2026-10-05T08:30:00", "kind": "translate", "model": "google/gemini-3.7-flash", "usd": 0.09, "title": "Harbour Watch - S01E03 - Fog \u00b7 Harbour Watch - S01E03 - Fog WEBDL-1080p.en.srt"}
+{"t": "2026-10-05T08:30:10", "kind": "judge", "model": "anthropic/claude-sonnet-5.5", "usd": 0.012, "title": "Harbour Watch - S01E03 - Fog \u00b7 Harbour Watch - S01E03 - Fog WEBDL-1080p.en.srt"}
+{"t": "2026-10-10T19:00:00", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.003, "title": "The Night Bakery - S09E09 - Semi Final \u00b7 The Night Bakery - S09E09 - Semi Final WEBDL-1080p.en.srt"}
+{"t": "2026-10-10T19:00:05", "kind": "judge", "model": "anthropic/claude-sonnet-5.5", "usd": 0.011, "title": "The Night Bakery - S09E09 - Semi Final \u00b7 The Night Bakery - S09E09 - Semi Final WEBDL-1080p.en.srt"}
+{"t": "2026-10-11T22:00:00", "kind": "translate", "model": "openai/gpt-6-luna", "usd": 0.004, "title": "Paper Lanterns \u00b7 Paper Lanterns (2016) WEBDL-1080p.en.hi.srt"}
+{"t": "2026-10-11T22:00:09", "kind": "judge", "model": "anthropic/claude-sonnet-5.5", "usd": 0.015, "title": "Paper Lanterns \u00b7 Paper Lanterns (2016) WEBDL-1080p.en.hi.srt"}

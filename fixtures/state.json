@@ -1,0 +1,300 @@
+{
+ "/data/series/Harbour Watch/Season 1/Harbour Watch - S01E01 - Pilot WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S01E01 - Pilot \u00b7 Harbour Watch - S01E01 - Pilot WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 600,
+  "missing": 0,
+  "score": 84,
+  "accuracy": 86,
+  "fluency": 82,
+  "problems": [
+   {
+    "line": 12,
+    "type": "meaning",
+    "note": "An idiom is translated word for word."
+   }
+  ],
+  "weak": false,
+  "usd": 0.002,
+  "judge_usd": 0.01,
+  "seconds": 40,
+  "at": "2026-09-20T10:00:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": 84,
+    "at": "2026-09-20T10:00:00"
+   }
+  ],
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.01,
+   "odd_length": 0.0,
+   "shifted": 0.002
+  },
+  "failed_checks": []
+ },
+ "/data/series/Harbour Watch/Season 1/Harbour Watch - S01E02 - Low Tide WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S01E02 - Low Tide \u00b7 Harbour Watch - S01E02 - Low Tide WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "openai/gpt-6-luna",
+   "google/gemini-3.7-flash"
+  ],
+  "lines": 650,
+  "missing": 0,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.08,
+  "judge_usd": 0.0,
+  "seconds": 75,
+  "at": "2026-10-02T21:15:00",
+  "history": [
+   {
+    "tier": 2,
+    "score": null,
+    "failed": [],
+    "at": "2026-10-02T21:15:00"
+   }
+  ],
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.01,
+   "odd_length": 0.0,
+   "shifted": 0.002
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.01,
+    "odd_length": 0.0,
+    "shifted": 0.0547
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": [
+      "shifted"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  }
+ },
+ "/data/series/Harbour Watch/Season 1/Harbour Watch - S01E03 - Fog WEBDL-1080p.nl.srt": {
+  "title": "Harbour Watch - S01E03 - Fog \u00b7 Harbour Watch - S01E03 - Fog WEBDL-1080p.en.srt",
+  "tier": 2,
+  "model": "google/gemini-3.7-flash",
+  "models_used": [
+   "openai/gpt-6-luna",
+   "google/gemini-3.7-flash"
+  ],
+  "lines": 580,
+  "missing": 14,
+  "score": 58,
+  "accuracy": 55,
+  "fluency": 61,
+  "problems": [
+   {
+    "line": 3,
+    "type": "untranslated",
+    "note": "English line left as is."
+   },
+   {
+    "line": 40,
+    "type": "grammar",
+    "note": "Wrong word order."
+   }
+  ],
+  "weak": true,
+  "usd": 0.09,
+  "judge_usd": 0.012,
+  "seconds": 90,
+  "at": "2026-10-05T08:30:00",
+  "history": [
+   {
+    "tier": 2,
+    "score": 58,
+    "failed": [
+     "missing"
+    ],
+    "at": "2026-10-05T08:30:00"
+   }
+  ],
+  "checks": {
+   "missing": 0.024,
+   "untranslated": 0.01,
+   "odd_length": 0.0,
+   "shifted": 0.002
+  },
+  "failed_checks": [
+   "missing"
+  ],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.03,
+    "untranslated": 0.05,
+    "odd_length": 0.0,
+    "shifted": 0.002
+   },
+   "failed": [
+    "missing",
+    "untranslated"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 2,
+     "failed": [
+      "missing"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": 2,
+     "failed": [
+      "missing"
+     ]
+    },
+    {
+     "model": "google/gemini-3.7-flash",
+     "effort": null,
+     "batches": "all",
+     "failed": [
+      "missing"
+     ]
+    }
+   ]
+  }
+ },
+ "/data/series/The Night Bakery/Season 9/The Night Bakery - S09E09 - Semi Final WEBDL-1080p.nl.srt": {
+  "title": "The Night Bakery - S09E09 - Semi Final \u00b7 The Night Bakery - S09E09 - Semi Final WEBDL-1080p.en.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 720,
+  "missing": 0,
+  "score": 72,
+  "accuracy": 74,
+  "fluency": 70,
+  "problems": [],
+  "weak": false,
+  "usd": 0.003,
+  "judge_usd": 0.011,
+  "seconds": 45,
+  "at": "2026-10-10T19:00:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": 72,
+    "at": "2026-10-10T19:00:00"
+   }
+  ],
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.01,
+   "odd_length": 0.0,
+   "shifted": 0.002
+  },
+  "failed_checks": [],
+  "step1": {
+   "model": "openai/gpt-6-luna",
+   "checks": {
+    "missing": 0.0,
+    "untranslated": 0.004,
+    "odd_length": 0.0,
+    "shifted": 0.031
+   },
+   "failed": [
+    "shifted"
+   ],
+   "redo": [
+    {
+     "model": "openai/gpt-6-luna",
+     "effort": "medium",
+     "batches": 1,
+     "failed": []
+    }
+   ]
+  }
+ },
+ "/data/movies/Paper Lanterns (2016)/Paper Lanterns (2016) WEBDL-1080p.nl.srt": {
+  "title": "Paper Lanterns \u00b7 Paper Lanterns (2016) WEBDL-1080p.en.hi.srt",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 1400,
+  "missing": 0,
+  "score": 91,
+  "accuracy": 92,
+  "fluency": 90,
+  "problems": null,
+  "weak": false,
+  "usd": 0.004,
+  "judge_usd": 0.015,
+  "seconds": 120,
+  "at": "2026-10-11T22:00:00",
+  "history": [
+   {
+    "tier": 1,
+    "score": 91,
+    "at": "2026-10-11T22:00:00"
+   }
+  ]
+ },
+ "/test/sample.en.srt": {
+  "title": "Sample - S01E01 - Pilot",
+  "tier": 1,
+  "model": "openai/gpt-6-luna",
+  "models_used": [
+   "openai/gpt-6-luna"
+  ],
+  "lines": 10,
+  "missing": 0,
+  "score": null,
+  "accuracy": null,
+  "fluency": null,
+  "problems": [],
+  "weak": false,
+  "usd": 0.0001,
+  "judge_usd": 0.0,
+  "seconds": 2,
+  "at": "2026-10-03T22:31:40",
+  "history": [],
+  "checks": {
+   "missing": 0.0,
+   "untranslated": 0.01,
+   "odd_length": 0.0,
+   "shifted": 0.002
+  },
+  "failed_checks": []
+ },
+ "/data/series/Broken/Broken - S01E01.nl.srt": "not an object"
+}
