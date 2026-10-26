@@ -5,6 +5,7 @@ import { Detail } from "./pages/Detail";
 import { Overview } from "./pages/Overview";
 import { Shows } from "./pages/Shows";
 import { Translations } from "./pages/Translations";
+import { useTheme } from "./theme";
 
 const NAV = [
   ["/", "Overview"],
@@ -14,6 +15,7 @@ const NAV = [
 ] as const;
 
 export function App() {
+  const [theme, toggleTheme] = useTheme();
   return (
     <>
       <header className="top">
@@ -26,6 +28,9 @@ export function App() {
               </NavLink>
             ))}
           </nav>
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Switch colour theme">
+            {theme === "dark" ? "Light" : "Dark"}
+          </button>
         </div>
       </header>
       <main>
