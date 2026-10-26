@@ -1,5 +1,28 @@
 /* Colours follow the homelab's dashboard language: green good, orange attention, red wrong, blue neutral. */
 :root {
+  --bg: #000000;
+  --surface: #1c1c1e;
+  --border: #2c2c2e;
+  --grid: #2c2c2e;
+  --hover: rgba(255, 255, 255, 0.06);
+  --text: #f2f2f7;
+  --muted: #98989d;
+  --green: #30d158;
+  --orange: #ff9f0a;
+  --red: #ff453a;
+  --blue: #0a84ff;
+  --purple: #bf5af2;
+  --teal: #64d2ff;
+  --pink: #ff375f;
+  --yellow: #ffd60a;
+  --indigo: #5e5ce6;
+  --grey: #8e8e93;
+  --radius: 12px;
+  color-scheme: dark;
+}
+
+/* Dark is the default; light when chosen with the header button (data-theme on <html>). */
+:root[data-theme="light"] {
   --bg: #f2f2f7;
   --surface: #ffffff;
   --border: #e5e5ea;
@@ -19,28 +42,6 @@
   --grey: #8e8e93;
   --radius: 12px;
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000000;
-    --surface: #1c1c1e;
-    --border: #2c2c2e;
-    --grid: #2c2c2e;
-    --hover: rgba(255, 255, 255, 0.06);
-    --text: #f2f2f7;
-    --muted: #98989d;
-    --green: #30d158;
-    --orange: #ff9f0a;
-    --red: #ff453a;
-    --blue: #0a84ff;
-    --purple: #bf5af2;
-    --teal: #64d2ff;
-    --pink: #ff375f;
-    --yellow: #ffd60a;
-    --indigo: #5e5ce6;
-    color-scheme: dark;
-  }
 }
 
 * {
@@ -107,6 +108,12 @@ nav a {
   padding: 6px 10px;
   border-radius: 8px;
   white-space: nowrap;
+}
+.theme-toggle {
+  margin-left: auto;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: var(--muted);
 }
 nav a.active {
   color: var(--text);

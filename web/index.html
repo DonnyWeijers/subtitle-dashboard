@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      // Before the first paint, so a light choice doesn't flash dark. Dark is the default (src/theme.ts).
+      try {
+        if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light";
+      } catch {}
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='6' width='28' height='20' rx='4' fill='%230A84FF'/><rect x='7' y='17' width='10' height='3' rx='1.5' fill='white'/><rect x='19' y='17' width='6' height='3' rx='1.5' fill='white'/></svg>" />
     <title>Subtitle dashboard</title>
   </head>
