@@ -86,7 +86,7 @@ The screenshots use the example data in `example/` (made-up shows).
 
 | Part | Built with |
 |---|---|
-| API | [Rust](https://www.rust-lang.org) 2024, [axum](https://github.com/tokio-rs/axum) on [Tokio](https://tokio.rs), [tower-http](https://github.com/tower-rs/tower-http) for the static files |
+| API | [Rust](https://www.rust-lang.org) (2024 edition), [axum](https://github.com/tokio-rs/axum) on [Tokio](https://tokio.rs), [tower-http](https://github.com/tower-rs/tower-http) for the static files |
 | Data | [SQLite](https://sqlite.org) in memory via [rusqlite](https://github.com/rusqlite/rusqlite) (bundled), [serde](https://serde.rs) for the JSON files |
 | API spec | [utoipa](https://github.com/juhaku/utoipa): OpenAPI 3.1 from the Rust types, served at `/api/openapi.json` |
 | Frontend | [React](https://react.dev) 19, [TypeScript](https://www.typescriptlang.org), [Vite](https://vite.dev), [React Router](https://reactrouter.com) |
