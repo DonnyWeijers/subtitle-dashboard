@@ -20,8 +20,10 @@ pub struct Problem {
     pub line: Option<i64>,
     /// For example `meaning`, `untranslated`, `grammar`.
     #[serde(alias = "type", default)]
+    #[schema(required = true)]
     pub kind: String,
     #[serde(default)]
+    #[schema(required = true)]
     pub note: String,
 }
 
@@ -33,11 +35,14 @@ pub struct Step1 {
     pub model: Option<String>,
     /// Share of lines per check, 0–1.
     #[serde(default, deserialize_with = "null_default")]
+    #[schema(required = true)]
     pub checks: BTreeMap<String, f64>,
     #[serde(default, deserialize_with = "null_default")]
+    #[schema(required = true)]
     pub failed: Vec<String>,
     /// The repair passes, in order.
     #[serde(default, deserialize_with = "null_default")]
+    #[schema(required = true)]
     pub redo: Vec<Redo>,
 }
 
@@ -52,6 +57,7 @@ pub struct Redo {
     pub batches: Option<i64>,
     /// Checks the file still failed after this pass.
     #[serde(default, deserialize_with = "null_default")]
+    #[schema(required = true)]
     pub failed: Vec<String>,
 }
 
@@ -107,6 +113,7 @@ pub struct Attempt {
     pub step: Option<i64>,
     pub score: Option<f64>,
     #[serde(default, deserialize_with = "null_default")]
+    #[schema(required = true)]
     pub failed: Vec<String>,
     pub at: Option<String>,
 }

@@ -1,0 +1,1051 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "subtitle-dashboard",
+    "description": "Costs and quality of the subtitle translation service (subtrans). All amounts in euros.",
+    "license": {
+      "name": ""
+    },
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/checks": {
+      "get": {
+        "tags": [],
+        "operationId": "checks",
+        "parameters": [
+          {
+            "name": "days",
+            "in": "query",
+            "description": "Look-back window in days, 1–3650, default 30.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Checks"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/costs": {
+      "get": {
+        "tags": [],
+        "operationId": "costs",
+        "parameters": [
+          {
+            "name": "group",
+            "in": "query",
+            "description": "day and month are split per model; model and show are totals, most expensive first.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "day",
+                "month",
+                "model",
+                "show"
+              ]
+            }
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "description": "YYYY-MM-DD, inclusive.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "YYYY-MM-DD, inclusive.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CostRow"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/health": {
+      "get": {
+        "tags": [],
+        "operationId": "health",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IngestStatus"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/shows": {
+      "get": {
+        "tags": [],
+        "operationId": "shows",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ShowRow"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/summary": {
+      "get": {
+        "tags": [],
+        "operationId": "summary",
+        "parameters": [
+          {
+            "name": "month",
+            "in": "query",
+            "description": "YYYY-MM; defaults to the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Summary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/translations": {
+      "get": {
+        "tags": [],
+        "operationId": "translations",
+        "parameters": [
+          {
+            "name": "show",
+            "in": "query",
+            "description": "Exact show name.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "weak",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "step",
+            "in": "query",
+            "description": "1 or 2.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Text search in show, episode title and file name.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "at",
+                "score",
+                "eur",
+                "show"
+              ]
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Starts at 1.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "1–200, default 50.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranslationPage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/translations/{id}": {
+      "get": {
+        "tags": [],
+        "operationId": "translation",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranslationDetail"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Attempt": {
+        "type": "object",
+        "description": "One attempt on a subtitle, oldest first.",
+        "required": [
+          "failed"
+        ],
+        "properties": {
+          "at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "failed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "step": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "format": "int64"
+          }
+        }
+      },
+      "CheckCount": {
+        "type": "object",
+        "required": [
+          "check",
+          "failed"
+        ],
+        "properties": {
+          "check": {
+            "type": "string"
+          },
+          "failed": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "CheckWeek": {
+        "type": "object",
+        "required": [
+          "week",
+          "checked",
+          "failed"
+        ],
+        "properties": {
+          "checked": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "failed": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "week": {
+            "type": "string",
+            "description": "ISO-like week label, 2026-W43 (weeks start on Monday)."
+          }
+        }
+      },
+      "Checks": {
+        "type": "object",
+        "required": [
+          "days",
+          "checked",
+          "failed",
+          "still_weak",
+          "by_check",
+          "by_repair",
+          "by_week"
+        ],
+        "properties": {
+          "by_check": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CheckCount"
+            }
+          },
+          "by_repair": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RepairCount"
+            },
+            "description": "How the failures were repaired."
+          },
+          "by_week": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CheckWeek"
+            }
+          },
+          "checked": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Translations that started at step 1 and went through the free checks."
+          },
+          "days": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fail_pct": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "failed": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Of those, how many failed a check and were repaired."
+          },
+          "still_weak": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Still weak after step 2."
+          }
+        }
+      },
+      "CostRow": {
+        "type": "object",
+        "required": [
+          "key",
+          "eur",
+          "calls"
+        ],
+        "properties": {
+          "calls": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "eur": {
+            "type": "number",
+            "format": "double"
+          },
+          "key": {
+            "type": "string",
+            "description": "Day, month, model or show, depending on `group`."
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Set for `group=day` and `group=month`."
+          }
+        }
+      },
+      "ErrorBody": {
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        }
+      },
+      "IngestStatus": {
+        "type": "object",
+        "required": [
+          "calls",
+          "translations",
+          "skipped"
+        ],
+        "properties": {
+          "calls": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Rows from costs.jsonl."
+          },
+          "last_error": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_ingest": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "skipped": {
+            "type": "integer",
+            "format": "int64",
+            "description": "costs.jsonl lines and state.json entries that could not be read."
+          },
+          "translations": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Entries from state.json, test runs included."
+          }
+        }
+      },
+      "Problem": {
+        "type": "object",
+        "description": "One issue the AI judge found in a translation.",
+        "required": [
+          "kind",
+          "note"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "For example `meaning`, `untranslated`, `grammar`."
+          },
+          "line": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "format": "int64"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "Redo": {
+        "type": "object",
+        "description": "One repair pass.",
+        "required": [
+          "failed"
+        ],
+        "properties": {
+          "batches": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "format": "int64",
+            "description": "How many 100-line batches were redone; `None` for the whole file."
+          },
+          "effort": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Reasoning effort, for step 1's model."
+          },
+          "failed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Checks the file still failed after this pass."
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "Repair": {
+        "type": "string",
+        "enum": [
+          "step1-batches",
+          "step2-batches",
+          "step2-file",
+          "unfixed"
+        ]
+      },
+      "RepairCount": {
+        "type": "object",
+        "required": [
+          "repair",
+          "count"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "repair": {
+            "$ref": "#/components/schemas/Repair"
+          }
+        }
+      },
+      "ScoreBucket": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "count"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "from": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Lower bound, inclusive (0, 10, …, 90)."
+          },
+          "to": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Upper bound, exclusive (100 is included in the last bucket)."
+          }
+        }
+      },
+      "ShowRow": {
+        "type": "object",
+        "required": [
+          "show",
+          "show_kind",
+          "translations",
+          "eur",
+          "eur_spent",
+          "judged",
+          "weak",
+          "fallbacks",
+          "last_at"
+        ],
+        "properties": {
+          "avg_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "eur": {
+            "type": "number",
+            "format": "double",
+            "description": "What the current translations cost (translation plus judge)."
+          },
+          "eur_spent": {
+            "type": "number",
+            "format": "double",
+            "description": "Every call for this show, retries and replaced translations included."
+          },
+          "fallbacks": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "judged": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "last_at": {
+            "type": "string"
+          },
+          "show": {
+            "type": "string"
+          },
+          "show_kind": {
+            "type": "string",
+            "description": "series or movie."
+          },
+          "translations": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weak": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Step1": {
+        "type": "object",
+        "description": "Step 1's output when it failed a free check. subtrans then repairs it: first only the failing batches with\nstep 1's model (once per retry effort), then those batches with step 2's model, and only if the file still fails,\nthe whole file with step 2's model.",
+        "required": [
+          "checks",
+          "failed",
+          "redo"
+        ],
+        "properties": {
+          "checks": {
+            "type": "object",
+            "description": "Share of lines per check, 0–1.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "double"
+            },
+            "propertyNames": {
+              "type": "string"
+            }
+          },
+          "failed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "redo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Redo"
+            },
+            "description": "The repair passes, in order."
+          }
+        }
+      },
+      "Summary": {
+        "type": "object",
+        "required": [
+          "month",
+          "eur_month",
+          "eur_month_judge",
+          "eur_prev_month",
+          "eur_total",
+          "calls_month",
+          "translations",
+          "translations_month",
+          "judged",
+          "fallbacks",
+          "weak",
+          "score_buckets"
+        ],
+        "properties": {
+          "avg_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "calls_month": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "eur_month": {
+            "type": "number",
+            "format": "double"
+          },
+          "eur_month_judge": {
+            "type": "number",
+            "format": "double",
+            "description": "The AI judge's share of `eur_month`."
+          },
+          "eur_prev_month": {
+            "type": "number",
+            "format": "double"
+          },
+          "eur_total": {
+            "type": "number",
+            "format": "double",
+            "description": "Everything since the first call, test runs included."
+          },
+          "fallback_pct": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "fallbacks": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Translations step 2 had to redo."
+          },
+          "judged": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Translations the AI judge reviewed (a random share)."
+          },
+          "last_translation_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "month": {
+            "type": "string"
+          },
+          "score_buckets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScoreBucket"
+            }
+          },
+          "translations": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "translations_month": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weak": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "TranslationDetail": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/TranslationRow"
+          },
+          {
+            "type": "object",
+            "required": [
+              "path",
+              "models_used",
+              "missing",
+              "judge_eur",
+              "checks",
+              "problems",
+              "history"
+            ],
+            "properties": {
+              "accuracy": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "format": "double"
+              },
+              "checks": {
+                "type": "object",
+                "description": "Share of lines per free check on the final translation, 0–1.",
+                "additionalProperties": {
+                  "type": "number",
+                  "format": "double"
+                },
+                "propertyNames": {
+                  "type": "string"
+                }
+              },
+              "file": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fluency": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "format": "double"
+              },
+              "history": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Attempt"
+                }
+              },
+              "judge_eur": {
+                "type": "number",
+                "format": "double"
+              },
+              "missing": {
+                "type": "integer",
+                "format": "int64"
+              },
+              "models_used": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "path": {
+                "type": "string",
+                "description": "Subtitle path inside Bazarr's container."
+              },
+              "problems": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              },
+              "step1": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/components/schemas/Step1"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "TranslationPage": {
+        "type": "object",
+        "required": [
+          "total",
+          "page",
+          "per_page",
+          "items"
+        ],
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TranslationRow"
+            }
+          },
+          "page": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "per_page": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "total": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "TranslationRow": {
+        "type": "object",
+        "required": [
+          "id",
+          "show",
+          "show_kind",
+          "step",
+          "model",
+          "lines",
+          "weak",
+          "eur",
+          "at",
+          "failed_checks",
+          "step1_failed"
+        ],
+        "properties": {
+          "at": {
+            "type": "string"
+          },
+          "episode": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "format": "int64"
+          },
+          "episode_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "eur": {
+            "type": "number",
+            "format": "double",
+            "description": "Translation plus judge."
+          },
+          "failed_checks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "lines": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "repair": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/Repair"
+              }
+            ]
+          },
+          "score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "season": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "format": "int64"
+          },
+          "seconds": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "show": {
+            "type": "string"
+          },
+          "show_kind": {
+            "type": "string",
+            "description": "series or movie."
+          },
+          "step": {
+            "type": "integer",
+            "format": "int64",
+            "description": "1 = first model, 2 = fallback."
+          },
+          "step1_failed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Checks step 1 failed, which started a repair."
+          },
+          "weak": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
