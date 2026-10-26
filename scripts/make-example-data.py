@@ -3,7 +3,7 @@
 dashboard locally. Made-up shows, nothing from a real library. Stdlib only.
 
 The data covers the last DAYS days up to today, so "this month" has data: run it again to move the dates.
-Same seed, same shape: the numbers follow what subtrans does (write-ups 48-51): 100-line batches, step 1 first,
+Same seed, same shape: the numbers follow what subtrans does: 100-line batches, step 1 first,
 ~14% failing a free check and repaired (mostly by redoing batches with step 1), an AI judge on ~20%.
 
     python3 scripts/make-example-data.py [--days 75] [--out example]
