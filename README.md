@@ -77,28 +77,63 @@ The dashboard classifies every repair:
 | `STATIC_DIR` | `web/dist` (`/app/web` in the image) | Not found: the API only |
 | `TZ` | | subtrans writes local time; set the same zone so "this month" matches |
 
-## Running it
+## Run it locally
+
+`example/` holds a fake subtrans data folder (made-up shows, ~90 translations over the last 75 days), so the
+dashboard has something to show without subtrans. Its dates move with `scripts/make-example-data.py`: run it
+again to get data up to today (the summary shows *this* month).
+
+### With Docker (nothing else to install)
 
 ```sh
-docker build -t subtitle-dashboard:0.1.0 .
+python3 scripts/make-example-data.py   # optional: example data up to today
+docker compose up --build
 ```
 
-See [`compose.example.yaml`](compose.example.yaml): mount subtrans' data folder read-only, as a user that can
-read it. The container runs read-only, without capabilities, and has its own health check
-(`subtitle-dashboard --healthcheck`, as the distroless image has no curl).
+Open <http://localhost:8795>. `docker compose down` stops it.
+
+### Without Docker, for development
+
+Needs Rust (stable) and Node 24.
+
+```sh
+DATA_DIR=example cargo run           # API on http://localhost:8080
+cd web && npm ci && npm run dev      # frontend on http://localhost:5173, /api proxied to :8080
+```
+
+The frontend reloads on save; restart `cargo run` after an API change. `npm run build` puts the frontend in
+`web/dist`, which `cargo run` then serves itself on :8080.
+
+## Run it next to subtrans (homelab)
+
+[`compose.yaml`](compose.yaml) reads its settings from a `.env` next to it. Copy
+[`.env.example`](.env.example) and point it at subtrans' data folder:
+
+```sh
+cp .env.example .env
+# SUBTRANS_DATA=<subtrans' data folder, with costs.jsonl and state.json>
+# RUN_AS=<uid:gid that can read those files, e.g. the user subtrans runs as>
+# BIND=<the host address your reverse proxy connects to>, PORT=<a free port>
+# TAG=<version>, e.g. 0.1.0
+docker compose up -d --build
+```
+
+- The folder is mounted read-only and the container runs read-only, without capabilities, with its own health check
+  (`subtitle-dashboard --healthcheck`; the distroless image has no curl).
+- There is no login: put it behind a reverse proxy with authentication (it shows what is being watched).
+- Updating: `git pull`, set the new `TAG`, `docker compose up -d --build`. The in-memory database is rebuilt from
+  subtrans' files on start, so there is nothing to migrate or back up.
+- Released images are also on GHCR (`ghcr.io/donnyweijers/subtitle-dashboard:<version>`, from a `v*` tag): replace
+  `build: .` with that image to skip the local build.
 
 ## Development
 
-```sh
-DATA_DIR=fixtures cargo run          # API on :8080, with the fake data in fixtures/
-cd web && npm ci && npm run dev      # frontend on :5173, /api proxied to :8080
-```
-
-- `cargo test`: unit tests (title parsing, repair route) and API tests against `fixtures/` (fake shows, no real
-  viewing data), including half-written and replaced files
+- `cargo test`: unit tests (title parsing, repair route) and API tests against `fixtures/` (a small fake dataset
+  with exact expected numbers), including half-written and replaced files
 - `cd web && npm test && npm run lint && npm run typecheck`
 - `scripts/gen-api.sh`: after an API change, regenerates `openapi.json` and `web/src/api/schema.d.ts`; CI fails when
   they are out of date
+- `scripts/make-example-data.py`: regenerates `example/` (fixed seed, dates up to today)
 
 CI (GitHub Actions) runs `fmt`, `clippy`, the tests, `cargo deny` (advisories, licences), ESLint, `tsc`, Vitest and
 `npm audit`, then builds the image and scans it with Trivy (fails on HIGH or CRITICAL). A `v*` tag pushes the image
