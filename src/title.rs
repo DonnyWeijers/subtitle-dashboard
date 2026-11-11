@@ -100,9 +100,7 @@ mod tests {
 
     #[test]
     fn episode_with_file() {
-        let t = parse(
-            "Harbour Watch: Night Shift - S28E03 - Anonymity · Harbour Watch - S28E03 - Anonymity.en.srt",
-        );
+        let t = parse("Harbour Watch: Night Shift - S28E03 - Anonymity · Harbour Watch - S28E03 - Anonymity.en.srt");
         assert_eq!(t.kind, ShowKind::Series);
         assert_eq!(t.show, "Harbour Watch: Night Shift");
         assert_eq!((t.season, t.episode), (Some(28), Some(3)));
